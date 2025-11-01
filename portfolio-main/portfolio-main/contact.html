@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <div class="background">
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand"><a href="index.html" class="brand-yellow">Contact</a></div>
+            <div class="header-controls">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page">
+        <div class="contact-container">
+            <!-- Contact Form Section -->
+            <section class="contact-form-section">
+                <div class="card contact-card">
+                    <div class="contact-header">
+                        <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+                        <p class="muted-text">Have a project in mind? Let's connect and make something amazing together.</p>
+                    </div>
+                    
+                    <form action="https://formspree.io/f/xjkyggjd" method="POST" class="contact-form">
+                        <input type="hidden" name="_to" value="uppunurivasureddy@gmail.com">
+                        <input type="hidden" name="_subject" value="Portfolio Contact Form Submission">
+                        <input type="hidden" name="_next" value="thank-you.html">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                <i class="fas fa-user form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                <i class="fas fa-envelope form-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                                <i class="fas fa-phone form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="project">Project Collaboration</option>
+                                    <option value="job">Job Opportunity</option>
+                                    <option value="freelance">Freelance Work</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <i class="fas fa-tag form-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or inquiry..." required></textarea>
+                            <i class="fas fa-comment form-icon"></i>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button class="btn" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Project Feedback Section -->
+            <section class="feedback-section">
+                <div class="card feedback-card">
+                    <div class="feedback-header">
+                        <h2><i class="fas fa-star"></i> Project Feedback</h2>
+                        <p class="muted-text">Share your thoughts on any of my projects. Your feedback helps me improve!</p>
+                    </div>
+                    
+                    <form action="https://formspree.io/f/xjkyggjd" method="POST" class="feedback-form">
+                        <input type="hidden" name="_to" value="uppunurivasureddy@gmail.com">
+                        <input type="hidden" name="_subject" value="Portfolio Project Feedback">
+                        <input type="hidden" name="_next" value="thank-you.html">
+                        
+                        <div class="form-group">
+                            <label for="project-name">Project Name</label>
+                            <select id="project-name" name="project" required>
+                                <option value="">Select a project</option>
+                                <option value="ai-voice-translator">AI Voice Translator</option>
+                                <option value="ai-automation-bot">AI Automation Bot</option>
+                                <option value="spotify-clone">Spotify Clone</option>
+                                <option value="computer-vision-app">Computer Vision App</option>
+                                <option value="data-analytics-dashboard">Data Analytics Dashboard</option>
+                                <option value="portfolio-website">Portfolio Website</option>
+                                <option value="neural-network-visualizer">Neural Network Visualizer</option>
+                                <option value="ml-internship">ML Internship Project</option>
+                            </select>
+                            <i class="fas fa-code form-icon"></i>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="feedback-name">Your Name</label>
+                                <input type="text" id="feedback-name" name="feedback_name" placeholder="Enter your name" required>
+                                <i class="fas fa-user form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedback-email">Your Email</label>
+                                <input type="email" id="feedback-email" name="feedback_email" placeholder="Enter your email" required>
+                                <i class="fas fa-envelope form-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="rating">Overall Rating</label>
+                            <div class="rating-input">
+                                <div class="stars-input">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1"><i class="fas fa-star"></i></label>
+                                </div>
+                                <span class="rating-text">Click to rate</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="feedback-category">Feedback Category</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="feedback_category" value="design">
+                                    <span class="checkmark"></span>
+                                    Design & UI/UX
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="feedback_category" value="functionality">
+                                    <span class="checkmark"></span>
+                                    Functionality
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="feedback_category" value="performance">
+                                    <span class="checkmark"></span>
+                                    Performance
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="feedback_category" value="code-quality">
+                                    <span class="checkmark"></span>
+                                    Code Quality
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="feedback-message">Detailed Feedback</label>
+                            <textarea id="feedback-message" name="feedback_message" rows="5" placeholder="Share your detailed thoughts, suggestions, or improvements..." required></textarea>
+                            <i class="fas fa-comments form-icon"></i>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button class="btn" type="submit">
+                                <i class="fas fa-heart"></i>
+                                Submit Feedback
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer"><div class="container">© <span id="year"></span> Vasu Reddy — All rights reserved.</div></footer>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-trail" aria-hidden="true"></div>
+
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <div class="background">
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand"><a href="index.html" class="brand-yellow">Projects</a></div>
+            <div class="header-controls">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page">
+
+        <section class="projects-filter card animate-in delay-1">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ai">AI/NLP</button>
+            </div>
+        </section>
+
+        <section class="projects-container animate-in delay-2">
+            <div class="projects-grid">
+                <!-- Featured Projects -->
+                <article class="project-card featured" data-category="ai ml">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">🎤</span>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-status">Featured</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Voice Translator</h3>
+                        <p>Real-time voice translation system using speech recognition and NLP. Built for IIIT Bangalore hackathon with multilingual support and voice synthesis.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Speech Recognition</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">TTS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">View Demo</a>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                        <div class="project-rating">
+                            <span class="rating-label">Rate this project:</span>
+                            <div class="star-rating" data-project="ai-voice-translator">
+                                <span class="star" data-rating="1">★</span>
+                                <span class="star" data-rating="2">★</span>
+                                <span class="star" data-rating="3">★</span>
+                                <span class="star" data-rating="4">★</span>
+                                <span class="star" data-rating="5">★</span>
+                            </div>
+                            <span class="rating-display">Not rated yet</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">🤖</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Automation Bot</h3>
+                        <p>Intelligent automation bot that performs various tasks based on natural language prompts. Features task scheduling and API integrations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">View Project</a>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                        <div class="project-rating">
+                            <span class="rating-label">Rate this project:</span>
+                            <div class="star-rating" data-project="ai-automation-bot">
+                                <span class="star" data-rating="1">★</span>
+                                <span class="star" data-rating="2">★</span>
+                                <span class="star" data-rating="3">★</span>
+                                <span class="star" data-rating="4">★</span>
+                                <span class="star" data-rating="5">★</span>
+                            </div>
+                            <span class="rating-display">Not rated yet</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">🎵</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Spotify Clone</h3>
+                        <p>Responsive music streaming interface with modern UI/UX design. Features playlist management, search functionality, and audio controls.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                        <div class="project-rating">
+                            <span class="rating-label">Rate this project:</span>
+                            <div class="star-rating" data-project="spotify-clone">
+                                <span class="star" data-rating="1">★</span>
+                                <span class="star" data-rating="2">★</span>
+                                <span class="star" data-rating="3">★</span>
+                                <span class="star" data-rating="4">★</span>
+                                <span class="star" data-rating="5">★</span>
+                            </div>
+                            <span class="rating-display">Not rated yet</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">👁️</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Computer Vision App</h3>
+                        <p>Image recognition application using Azure Cognitive Services. Implements object detection, text extraction, and facial recognition features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Azure</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">View Demo</a>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                        <div class="project-rating">
+                            <span class="rating-label">Rate this project:</span>
+                            <div class="star-rating" data-project="computer-vision-app">
+                                <span class="star" data-rating="1">★</span>
+                                <span class="star" data-rating="2">★</span>
+                                <span class="star" data-rating="3">★</span>
+                                <span class="star" data-rating="4">★</span>
+                                <span class="star" data-rating="5">★</span>
+                            </div>
+                            <span class="rating-display">Not rated yet</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">📊</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Analytics Dashboard</h3>
+                        <p>Interactive dashboard for data visualization and analysis. Built during Accenture Forage program with real-world dataset insights.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Streamlit</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">View App</a>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                        <div class="project-rating">
+                            <span class="rating-label">Rate this project:</span>
+                            <div class="star-rating" data-project="data-analytics-dashboard">
+                                <span class="star" data-rating="1">★</span>
+                                <span class="star" data-rating="2">★</span>
+                                <span class="star" data-rating="3">★</span>
+                                <span class="star" data-rating="4">★</span>
+                                <span class="star" data-rating="5">★</span>
+                            </div>
+                            <span class="rating-display">Not rated yet</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">💼</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal portfolio website with space-themed design, particle animations, and responsive layout. Built with modern web technologies.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Canvas</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary" href="index.html">View Live</a>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                        <div class="project-rating">
+                            <span class="rating-label">Rate this project:</span>
+                            <div class="star-rating" data-project="portfolio-website">
+                                <span class="star" data-rating="1">★</span>
+                                <span class="star" data-rating="2">★</span>
+                                <span class="star" data-rating="3">★</span>
+                                <span class="star" data-rating="4">★</span>
+                                <span class="star" data-rating="5">★</span>
+                            </div>
+                            <span class="rating-display">Not rated yet</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">🧠</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Neural Network Visualizer</h3>
+                        <p>Interactive web application to visualize neural network architectures and training processes. Educational tool for understanding deep learning.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">TensorFlow.js</span>
+                            <span class="tech-tag">Visualization</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Try It</a>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                        <div class="project-rating">
+                            <span class="rating-label">Rate this project:</span>
+                            <div class="star-rating" data-project="neural-network-visualizer">
+                                <span class="star" data-rating="1">★</span>
+                                <span class="star" data-rating="2">★</span>
+                                <span class="star" data-rating="3">★</span>
+                                <span class="star" data-rating="4">★</span>
+                                <span class="star" data-rating="5">★</span>
+                            </div>
+                            <span class="rating-display">Not rated yet</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Machine Learning Internship</h3>
+                        <p>ML model development and data preprocessing project completed during internship at Barath Intern. Focus on predictive analytics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">ML Pipeline</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">View Report</a>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Code</a>
+                        </div>
+                        <div class="project-rating">
+                            <span class="rating-label">Rate this project:</span>
+                            <div class="star-rating" data-project="ml-internship">
+                                <span class="star" data-rating="1">★</span>
+                                <span class="star" data-rating="2">★</span>
+                                <span class="star" data-rating="3">★</span>
+                                <span class="star" data-rating="4">★</span>
+                                <span class="star" data-rating="5">★</span>
+                            </div>
+                            <span class="rating-display">Not rated yet</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects-cta card animate-in delay-3">
+            <h2>More Projects</h2>
+            <p>Explore my complete project portfolio and contributions on GitHub</p>
+            <div class="cta-actions">
+                <a class="btn btn-primary btn-yellow" href="https://github.com/vasureddyuppunuri" target="_blank" rel="noopener">View GitHub Profile</a>
+                <a class="btn btn-outline" href="contact.html">Let's Collaborate</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="container">© <span id="year"></span> Vasu Reddy — All rights reserved.</div></footer>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-trail" aria-hidden="true"></div>
+
+</body>
+</html>
