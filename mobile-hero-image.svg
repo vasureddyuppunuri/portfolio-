@@ -1,0 +1,117 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f5f5f5"/>
+  
+  <!-- Floating dots in background -->
+  <circle cx="80" cy="60" r="3" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="320" cy="80" r="2" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="150" cy="40" r="2.5" fill="#d1d5db" opacity="0.5"/>
+  <circle cx="280" cy="50" r="1.5" fill="#d1d5db" opacity="0.7"/>
+  
+  <!-- Left plant -->
+  <g transform="translate(60, 120)">
+    <path d="M 0 80 Q 5 60 10 40 Q 15 50 20 30 Q 25 45 30 25 Q 35 40 40 20" 
+          fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 5 80 Q 10 65 15 45 Q 20 55 25 35 Q 30 50 35 30 Q 40 45 45 25" 
+          fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Right plant -->
+  <g transform="translate(300, 130)">
+    <path d="M 0 70 Q 8 55 6 35 Q 12 45 16 25 Q 20 40 24 20 Q 28 35 32 15" 
+          fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 4 70 Q 12 58 8 38 Q 16 48 20 28 Q 24 43 28 23 Q 32 38 36 18" 
+          fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Soccer ball -->
+  <g transform="translate(290, 80)">
+    <circle cx="15" cy="15" r="12" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <!-- Pentagon pattern -->
+    <polygon points="15,8 11,12 13,17 17,17 19,12" fill="#374151"/>
+    <polygon points="8,11 15,8 11,12" fill="#374151"/>
+    <polygon points="22,11 15,8 19,12" fill="#374151"/>
+    <polygon points="8,19 11,12 13,17" fill="#374151"/>
+    <polygon points="22,19 19,12 17,17" fill="#374151"/>
+  </g>
+  
+  <!-- Couch base -->
+  <g transform="translate(100, 180)">
+    <!-- Main couch body -->
+    <ellipse cx="100" cy="60" rx="80" ry="35" fill="#374751"/>
+    <rect x="20" y="25" width="160" height="70" fill="#374751" rx="15"/>
+    
+    <!-- Couch back -->
+    <rect x="15" y="15" width="170" height="25" fill="#2d3748" rx="12"/>
+    
+    <!-- Couch legs -->
+    <ellipse cx="40" cy="95" rx="8" ry="4" fill="#1f2937"/>
+    <ellipse cx="160" cy="95" rx="8" ry="4" fill="#1f2937"/>
+  </g>
+  
+  <!-- Person on couch -->
+  <g transform="translate(160, 120)">
+    <!-- Body -->
+    <ellipse cx="40" cy="70" rx="25" ry="35" fill="#f3e8ff"/>
+    
+    <!-- Head -->
+    <circle cx="40" cy="25" r="18" fill="#fdbcb4"/>
+    
+    <!-- Hair -->
+    <path d="M 22 15 Q 40 5 58 15 Q 50 20 40 22 Q 30 20 22 15" fill="#374151"/>
+    
+    <!-- Glasses -->
+    <circle cx="35" cy="25" r="6" fill="none" stroke="#374151" stroke-width="2"/>
+    <circle cx="45" cy="25" r="6" fill="none" stroke="#374151" stroke-width="2"/>
+    <line x1="41" y1="25" x2="39" y2="25" stroke="#374151" stroke-width="2"/>
+    <line x1="29" y1="25" x2="25" y2="26" stroke="#374151" stroke-width="2"/>
+    <line x1="51" y1="25" x2="55" y2="26" stroke="#374151" stroke-width="2"/>
+    
+    <!-- Laptop -->
+    <rect x="25" y="55" width="30" height="18" fill="#1f2937" rx="2"/>
+    <rect x="26" y="56" width="28" height="12" fill="#000000"/>
+    <circle cx="40" cy="62" r="0.5" fill="#10b981"/>
+    
+    <!-- Arms -->
+    <ellipse cx="20" cy="60" rx="6" ry="15" fill="#fdbcb4" transform="rotate(-20 20 60)"/>
+    <ellipse cx="60" cy="60" rx="6" ry="15" fill="#fdbcb4" transform="rotate(20 60 60)"/>
+    
+    <!-- Hands on laptop -->
+    <circle cx="30" cy="65" r="4" fill="#fdbcb4"/>
+    <circle cx="50" cy="65" r="4" fill="#fdbcb4"/>
+  </g>
+  
+  <!-- Cat -->
+  <g transform="translate(30, 220)">
+    <!-- Cat body -->
+    <ellipse cx="20" cy="25" rx="18" ry="20" fill="#1f2937"/>
+    
+    <!-- Cat head -->
+    <circle cx="20" cy="8" r="12" fill="#1f2937"/>
+    
+    <!-- Cat ears -->
+    <polygon points="12,2 16,8 20,5" fill="#1f2937"/>
+    <polygon points="28,2 24,8 20,5" fill="#1f2937"/>
+    
+    <!-- Cat eyes -->
+    <ellipse cx="16" cy="8" rx="2" ry="1" fill="#fbbf24"/>
+    <ellipse cx="24" cy="8" rx="2" ry="1" fill="#fbbf24"/>
+    <ellipse cx="16" cy="8" rx="0.8" ry="1" fill="#000000"/>
+    <ellipse cx="24" cy="8" rx="0.8" ry="1" fill="#000000"/>
+    
+    <!-- Cat tail -->
+    <path d="M 38 30 Q 45 25 48 35 Q 45 40 40 35" fill="#1f2937"/>
+    
+    <!-- Cat whiskers -->
+    <line x1="8" y1="10" x2="2" y2="8" stroke="#9ca3af" stroke-width="1"/>
+    <line x1="8" y1="12" x2="2" y2="12" stroke="#9ca3af" stroke-width="1"/>
+    <line x1="32" y1="10" x2="38" y2="8" stroke="#9ca3af" stroke-width="1"/>
+    <line x1="32" y1="12" x2="38" y2="12" stroke="#9ca3af" stroke-width="1"/>
+  </g>
+  
+  <!-- Additional decorative elements -->
+  <circle cx="120" cy="70" r="1.5" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="250" cy="90" r="2" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="180" cy="50" r="1" fill="#d1d5db" opacity="0.5"/>
+  
+</svg>

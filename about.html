@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <div class="background">
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand"><a href="index.html" class="brand-yellow">Vasu Reddy</a></div>
+            <div class="header-controls">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page" id="about-page">
+        <section class="about-hero card animate-in">
+            <div class="about-content">
+                <div class="about-intro">
+                    <h1>About Me</h1>
+                    <h2 class="about-subtitle">Machine Learning & AI Enthusiast</h2>
+                    <p class="about-description">
+                        Hi — I'm Vasu Reddy Uppunuri, a passionate student exploring the fascinating world of 
+                        Machine Learning and Artificial Intelligence. I'm dedicated to learning cutting-edge 
+                        technologies and building innovative solutions that make a difference.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="profile-picture">
+                        <img src="profile-picture.jpg" alt="Vasu Reddy Uppunuri" class="profile-img">
+                        <div class="profile-overlay">
+                            <div class="profile-details">
+                                <h3>Vasu Reddy Uppunuri</h3>
+                                <p>ML & AI Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-details card animate-in delay-1">
+            <div class="details-grid">
+                <div class="detail-item">
+                    <h3>🎯 Focus Areas</h3>
+                    <p>Computer Vision, Natural Language Processing, and Data Analytics. I enjoy working on projects that combine theoretical knowledge with practical applications.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>🌱 Currently Learning</h3>
+                    <p>Advanced deep learning techniques, cloud platforms for ML deployment, and exploring the latest developments in generative AI and large language models.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>💡 Interests</h3>
+                    <p>AI research, hackathons, open-source contributions, and building projects that solve real-world problems through intelligent automation.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>🚀 Goals</h3>
+                    <p>To contribute to meaningful AI projects, continue learning from industry experts, and eventually work on cutting-edge research in machine learning.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section card animate-in delay-2">
+            <h2>Technical Skills</h2>
+            <p class="skills-intro">Technologies and tools I work with</p>
+            
+            <div class="skill-categories">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="python">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="javascript">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="sql">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="scikit">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="tensorflow">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="opencv">
+                            <span class="skill-name">OpenCV</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Data Analysis</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="pandas">
+                            <span class="skill-name">Pandas</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="numpy">
+                            <span class="skill-name">NumPy</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="matplotlib">
+                            <span class="skill-name">Matplotlib</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="git">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="vscode">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="azure">
+                            <span class="skill-name">Azure</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-cta card animate-in delay-3">
+            <h2>Let's Connect</h2>
+            <p>I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply chat about the latest developments in AI and machine learning.</p>
+            <div class="cta-buttons">
+                <a class="btn btn-primary btn-yellow" href="contact.html">Get in Touch</a>
+                <a class="btn btn-outline" href="projects.html">View My Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="container">© <span id="year"></span> Vasu Reddy — All rights reserved.</div></footer>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-trail" aria-hidden="true"></div>
+
+</body>
+</html>

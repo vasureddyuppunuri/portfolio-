@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <meta name="description" content="Vasu Reddy Uppunuri — portfolio showcasing projects, skills and contact details.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+</head>
+<body class="index-page">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <div class="background">
+        <!-- particle network canvas -->
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <div class="header-controls">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="hero">
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <h1 class="animate-in">Hi 👋 I'm <span class="typing-text" data-text="Vasu Reddy"></span></h1>
+                <p class="subtitle animate-in delay-1">Machine Learning & AI Enthusiast</p>
+                <p class="description animate-in delay-1">Passionate about creating intelligent solutions and exploring the frontiers of artificial intelligence.</p>
+                
+                <div class="hero-cta animate-in delay-2">
+                    <a class="btn" href="projects.html">View Projects</a>
+                    <a class="btn btn-outline" href="about.html">About Me</a>
+                </div>
+                
+                <div class="social-links animate-in delay-3">
+                    <a href="https://github.com/vasureddyuppunuri" class="social-link" aria-label="GitHub Profile" target="_blank" rel="noopener">
+                        <span class="social-icon"><i class="fab fa-github"></i></span>
+                        <span class="social-label">GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/vasu-reddy-uppunuri" class="social-link" aria-label="LinkedIn Profile" target="_blank" rel="noopener">
+                        <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                        <span class="social-label">LinkedIn</span>
+                    </a>
+                    <a href="mailto:uppunurivasureddy@gmail.com" class="social-link" aria-label="Send Email">
+                        <span class="social-icon"><i class="fas fa-envelope"></i></span>
+                        <span class="social-label">Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">© <span id="year"></span> Vasu Reddy — All rights reserved.</div>
+    </footer>
+
+    <!-- elegant cursor trail -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-trail" aria-hidden="true"></div></body>
+</html>
